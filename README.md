@@ -52,4 +52,109 @@ number in an earlier level slot for shorter games, this is to ensure your game h
 having to forcibly terminate the game). I have provided the internal numbers the game uses for relevant
 scenes and characters below:
 
-*Going to add this list shortly*
+Scene Numbers for Stages:
+Vanilla
+09 GHZ 1
+10 GHZ 2
+11 CPZ 1
+12 CPZ 2
+13 SPZ 1
+14 SPZ 2
+15 FBZ 1
+16 FBZ 2
+17 PGZ 1
+18 PGZ 2
+19 SSZ 1
+20 SSZ 2
+21 Metal Sonic
+22 HCZ 1
+23 HCZ 2
+24 MSZ 1
+25 MSZ 1 K
+26 MSZ 2
+27 OOZ 1
+28 OOZ 2
+29 LRZ 1
+30 LRZ 2
+31 LRZ Boss
+32 MMZ 1
+33 MMZ 2
+34 TMZ 1
+35 TMZ 2
+36 TMZ Boss
+37 ERZ
+Encore Stages
+38 GHZ 1
+39 GHZ 2
+40 CPZ 1
+41 CPZ 2
+42 SPZ 1
+43 SPZ 2
+44 FBZ 1
+45 FBZ 2
+46 PGZ 1
+47 PGZ 2
+48 SSZ 1
+49 SSZ 2
+50 Metal Sonic
+51 HCZ 1
+52 HCZ 2
+53 MSZ 1
+54 MSZ 2
+55 OOZ 1
+56 OOZ 2
+57 LRZ 1
+58 LRZ 2
+59 LRZ Boss
+60 MMZ 1
+61 MMZ 2
+62 TMZ 1
+63 TMZ 2
+64 TMZ Boss
+vanilla
+65 emerald stage 1
+66 emerald stage 2
+67 emerald stage 3
+68 emerald stage 4
+69 emerald stage 5
+70 emerald stage 6
+71 emerald stage 7
+Encore
+72 emerald stage 1
+73 emerald stage 2
+74 emerald stage 3
+75 emerald stage 4
+76 emerald stage 5
+77 emerald stage 6
+78 emerald stage 7
+Ending Scenes
+126 Sonic Ending
+127 Encore Ending
+128 Tails Ending
+129 Knuckles Ending
+130 Mighty Ending
+131 Ray Ending
+132 Super Sonic Ending
+
+Character Values:
+sonic    01
+tails    02
+knuckles 04
+mighty   08
+ray	 16
+
+Known Issues
+=======================================================================================================
+-The issues mentioned above with save files. The game sees to have trouble understanding some things 
+	if you try to load some files that were created with this tool. Also worth mentioning the way 
+	sequencing is done on this there could be other issues with trying to load existing files. 
+	This is why 'No Save' is recommended.
+-Coming from Mirage Saloon Act 1 Knuckles Mania Mode to Mirage Saloon Act 2 Encore or coming from 
+	Mirage Saloon Act 1 Knuckles Mania Mode as Tails to Mirage Saloon Act 2 Mania Mode or Encore 
+	is likely to have you stuck slightly in the ground at the start of Act 2. This collision here
+	is favorable, so you can just mash jump and you'll get out or just hit restart.
+-Knuckles can make it into the Heavy Rider fight quite naturally in Encore Mode Lava Reef Act 2. When
+	the game tries to play his transition animation after the act Knuckles will just continually 
+	walk into the wall at the edge of the arena. Since cutscene skip exists in this version of the 
+	game, just hit start and you will head to the next zone.
+
