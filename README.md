@@ -52,109 +52,120 @@ number in an earlier level slot for shorter games, this is to ensure your game h
 having to forcibly terminate the game). I have provided the internal numbers the game uses for relevant
 scenes and characters below:
 
-Scene Numbers for Stages:
-Vanilla
-09 GHZ 1
-10 GHZ 2
-11 CPZ 1
-12 CPZ 2
-13 SPZ 1
-14 SPZ 2
-15 FBZ 1
-16 FBZ 2
-17 PGZ 1
-18 PGZ 2
-19 SSZ 1
-20 SSZ 2
-21 Metal Sonic
-22 HCZ 1
-23 HCZ 2
-24 MSZ 1
-25 MSZ 1 K
-26 MSZ 2
-27 OOZ 1
-28 OOZ 2
-29 LRZ 1
-30 LRZ 2
-31 LRZ Boss
-32 MMZ 1
-33 MMZ 2
-34 TMZ 1
-35 TMZ 2
-36 TMZ Boss
-37 ERZ
-Encore Stages
-38 GHZ 1
-39 GHZ 2
-40 CPZ 1
-41 CPZ 2
-42 SPZ 1
-43 SPZ 2
-44 FBZ 1
-45 FBZ 2
-46 PGZ 1
-47 PGZ 2
-48 SSZ 1
-49 SSZ 2
-50 Metal Sonic
-51 HCZ 1
-52 HCZ 2
-53 MSZ 1
-54 MSZ 2
-55 OOZ 1
-56 OOZ 2
-57 LRZ 1
-58 LRZ 2
-59 LRZ Boss
-60 MMZ 1
-61 MMZ 2
-62 TMZ 1
-63 TMZ 2
-64 TMZ Boss
-vanilla
-65 emerald stage 1
-66 emerald stage 2
-67 emerald stage 3
-68 emerald stage 4
-69 emerald stage 5
-70 emerald stage 6
-71 emerald stage 7
-Encore
-72 emerald stage 1
-73 emerald stage 2
-74 emerald stage 3
-75 emerald stage 4
-76 emerald stage 5
-77 emerald stage 6
-78 emerald stage 7
-Ending Scenes
-126 Sonic Ending
-127 Encore Ending
-128 Tails Ending
-129 Knuckles Ending
-130 Mighty Ending
-131 Ray Ending
-132 Super Sonic Ending
+Scene Numbers for Stages:<br>
+Vanilla<br>
+09 GHZ 1<br>
+10 GHZ 2<br>
+11 CPZ 1<br>
+12 CPZ 2<br>
+13 SPZ 1<br>
+14 SPZ 2<br>
+15 FBZ 1<br>
+16 FBZ 2<br>
+17 PGZ 1<br>
+18 PGZ 2<br>
+19 SSZ 1<br>
+20 SSZ 2<br>
+21 Metal Sonic<br>
+22 HCZ 1<br>
+23 HCZ 2<br>
+24 MSZ 1<br>
+25 MSZ 1 K<br>
+26 MSZ 2<br>
+27 OOZ 1<br>
+28 OOZ 2<br>
+29 LRZ 1<br>
+30 LRZ 2<br>
+31 LRZ Boss<br>
+32 MMZ 1<br>
+33 MMZ 2<br>
+34 TMZ 1<br>
+35 TMZ 2<br>
+36 TMZ Boss<br>
+37 ERZ<br>
+Encore Stages<br>
+38 GHZ 1<br>
+39 GHZ 2<br>
+40 CPZ 1<br>
+41 CPZ 2<br>
+42 SPZ 1<br>
+43 SPZ 2<br>
+44 FBZ 1<br>
+45 FBZ 2<br>
+46 PGZ 1<br>
+47 PGZ 2<br>
+48 SSZ 1<br>
+49 SSZ 2<br>
+50 Metal Sonic<br>
+51 HCZ 1<br>
+52 HCZ 2<br>
+53 MSZ 1<br>
+54 MSZ 2<br>
+55 OOZ 1<br>
+56 OOZ 2<br>
+57 LRZ 1<br>
+58 LRZ 2<br>
+59 LRZ Boss<br>
+60 MMZ 1<br>
+61 MMZ 2<br>
+62 TMZ 1<br>
+63 TMZ 2<br>
+64 TMZ Boss<br>
+vanilla<br>
+65 emerald stage 1<br>
+66 emerald stage 2<br>
+67 emerald stage 3<br>
+68 emerald stage 4<br>
+69 emerald stage 5<br>
+70 emerald stage 6<br>
+71 emerald stage 7<br>
+Encore<br>
+72 emerald stage 1<br>
+73 emerald stage 2<br>
+74 emerald stage 3<br>
+75 emerald stage 4<br>
+76 emerald stage 5<br>
+77 emerald stage 6<br>
+78 emerald stage 7<br>
+Ending Scenes<br>
+126 Sonic Ending<br>
+127 Encore Ending<br>
+128 Tails Ending<br>
+129 Knuckles Ending<br>
+130 Mighty Ending<br>
+131 Ray Ending<br>
+132 Super Sonic Ending<br>
 
-Character Values:
-sonic    01
-tails    02
-knuckles 04
-mighty   08
-ray	 16
+Character Values:<br>
+sonic    01<br>
+tails    02<br>
+knuckles 04<br>
+mighty   08<br>
+ray	 16<br>
 
 Known Issues
 =======================================================================================================
--The issues mentioned above with save files. The game sees to have trouble understanding some things 
-	if you try to load some files that were created with this tool. Also worth mentioning the way 
-	sequencing is done on this there could be other issues with trying to load existing files. 
-	This is why 'No Save' is recommended.
+-The issues mentioned above with save files. The game seems to have trouble understanding some things 
+	if you try to load saved files that were created while using this application. Also worth 
+	mentioning the way sequencing is done on this there could be other issues with trying to load 
+	existing files. This is why 'No Save' is recommended.
+	
 -Coming from Mirage Saloon Act 1 Knuckles Mania Mode to Mirage Saloon Act 2 Encore or coming from 
 	Mirage Saloon Act 1 Knuckles Mania Mode as Tails to Mirage Saloon Act 2 Mania Mode or Encore 
-	is likely to have you stuck slightly in the ground at the start of Act 2. This collision here
+	is likely to have you stuck slightly in the ground at the start of Act 2. The collision here
 	is favorable, so you can just mash jump and you'll get out or just hit restart.
+	
 -Knuckles can make it into the Heavy Rider fight quite naturally in Encore Mode Lava Reef Act 2. When
-	the game tries to play his transition animation after the act Knuckles will just continually 
+	the game tries to play his transition animation, after the act, Knuckles will just continually 
 	walk into the wall at the edge of the arena. Since cutscene skip exists in this version of the 
 	game, just hit start and you will head to the next zone.
 
+-Going from Green Hill Act 1 Encore Mode to Green Hill Act 2 Mania Mode causes the color palettes to 
+	become blended for some reason, you should still be able to tell the background changed and 
+	that the level is the Encore or Mania Mode version as the level starts. 
+	
+-Cheat Engine uses lua for some strange reason as it's scripting language, so this is what the 
+	randomizer is written in. Lua has notoriously bad random functions. I have taken some steps
+	to mitigate this but if you find that you are getting similar seeds or seed numbers then I
+	would recommend just going to random.org and grabbing a seed number from there and pasting
+	it into the randomizer gui.
