@@ -1,0 +1,7 @@
+decides character at offset 443914
+bitwise character placement
+sonic    01
+tails    02
+knuckles 04
+mighty   08
+ray	 16
