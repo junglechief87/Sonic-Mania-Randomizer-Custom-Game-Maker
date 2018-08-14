@@ -1,0 +1,86 @@
+
+sonicmania.exe+6b370f3
+sonicmania.exe+DC0368 break
+are eax+18 and eax + 310ac == 0
+
+change immediate to 0
+sonicmania.exe+2D779E5
+sonicmania.exe+16E3CF
+sonicmania.exe+59517C7
+sonicmania.exe+55b05
+
+4 words
+one with 1 bit set
+one with 3 bits set
+one with 5 bits set
+one with 4 bits set
+last three are an address 56E3B0 or B0E356
+
+sonicmania.exe+647c35B
+sonicmania.exe+27D68D6-->relevant value for PGZ 1
+
+exe+21d84
+
+
+SonicMania.exe+27B667B - 89 56 70              - mov [esi+70],edx
+moves the flag set for which emeralds have been obtained to esi+0x70
+
+SonicMania.exe+27B670C - 89 56 7C              - mov [esi+7C],edx
+moves value for current emerald stage offset to esi+0x7C, offset is from 65
+
+SonicMania.exe+5316A - 83 B8 C4000000 32     - cmp dword ptr [eax+000000C4],32 { 50 }
+checks for 50 rings every frame
+
+SonicMania.exe+53184 - 83 78 70 7F           - cmp dword ptr [eax+70],7F { 127 }
+checks if all emeralds are acquired, every frame
+
+SonicMania.exe+2D6DE1E - 66 8B 46 7C           - mov ax,[esi+7C]
+SonicMania.exe+2D6DE22 - 66 01 41 18           - add [ecx+18],ax
+takes value at esi+7C, the value that stores current level number for emeralds, and stores it in ax.
+Then add ax to the current scene number which has been set to 65 or 0x41 to select emerald stage
+
+SonicMania.exe+43850 - 89 46 70              - mov [esi+70],eax
+sets default emeralds when creating save file
+
+SonicMania.exe+2C7B5CD - 89 48 5C              - mov [eax+5C],ecx
+places object on map from debug mode
+
+objects coordinates are xxxx yyyy 1122 3344 
+			xxxx yyyy 5566 7788
+
+coordinates stored in ram as 6655 0000 8877
+
+offset 5A from coordinate is the item type index for capsules
+
+SonicMania.exe+A7ED1 - 8B 4E 5C              - mov ecx,[esi+5C]
+reads in capsules item index to do something on level load, can hook into here to change capsules on level load.
+
+Power Up Indexes
+00 10 Rings
+01 Blue Shield
+02 Bubble Shield
+03 Fire Shield
+04 Electric Shield
+05 Invincibility 
+06 Speed Shoes
+07 Sonic Extra Life
+08 Tails Extra Life
+09 Knuckles Extra Life
+0A Eggman Box
+0B Blue Ring
+0C Swap, does nothing in mania mode
+0D Random Box
+0E Super Box
+0F Mighty Extra Life
+10 Ray Extra Life
+11 Character Switch
+
+Extra Lives auto swap using 07 as a base
+
+SonicMania.exe+853AD - 83 79 70 7F           - cmp dword ptr [ecx+70],7F { 127 }
+check for super to warp to egg reverie
+SonicMania.exe+82A50 - 83 79 70 7F           - cmp dword ptr [ecx+70],7F { 127 }
+checks again for super to warp to egg reverie on escape scene finished
+
+
+SonicMania.exe+45EA70
