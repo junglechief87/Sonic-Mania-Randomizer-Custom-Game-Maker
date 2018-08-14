@@ -2,13 +2,13 @@ This is the Sonic Mania Randomizer/Custom Game Maker made using Cheat Engine ass
 This requires Cheat Engine 6.7 or greater to run.
 
 This application allows the creation of custom level orders through Mania Mode, including Encore levels,
-and character orders. It should be played on a Mania Mode'No Save' file as certain things this 
-application can do have undesired effects. For instance, trying to load a save file that was written to while 
-using this application can cause crashing. Want the first level to be Titanic Monarch Act 1 with Knuckles,
-then jump into Stardust Speedway Act 1 with Mighty as the second level? This application will let you
-set that up. It also contains functionality to create a random game using seeds, so the experience
-can be different each time you play. You can even share the seed number with someone so they can have
-the same experience or start a race with the same level and character layout.
+and character orders. It should be played on a Mania Mode 'No Save' file as certain things this 
+application does can have undesired effects on a file that saves progress. For instance, trying to load a 
+save file that was written to while using this application can cause crashing. Want the first level to 
+be Titanic Monarch Act 1 with Knuckles, then jump into Stardust Speedway Act 1 with Mighty as the second 
+level? This application will let you set that up. It also contains functionality to create a random game 
+using seeds, so the experience can be different each time you play. You can even share the seed number 
+with someone so they can have the same experience or start a race with the same level and character layout.
 
 Intructions
 ========================================================================================================
@@ -21,10 +21,34 @@ Intructions
 
 -Click on the check box marked 'Allow Custom Level/Character Order'. This option sets the necessary hooks
 	for the rest of the program to work. Unchecking the box reverts the game code to it's default
-	state.
+	state. Checking or unchecking the checkbox will revert the application back to it's default 
+	settings as well.
 
 -With that set you have a few options. You can build a custom game or generate a random game.
 
+Universal Settings
+========================================================================================================
+Custom level order - This setting allows for a random or custom built level order, without this checkbox 
+	checked the game will use the default level order.
+	
+Custom Primary Character - This setting allows for a random or custom built character order, without
+	this checkbox checked the game will use whichever character is selected at the start of the game.
+	This checkbox being checked without the secondary checkbox checked only allows for solo character
+	combos, so no Sonic and Tails or Knuckles and Knuckles without also checking the next box.
+	
+Custom Secondary Character - This setting allows for a random or custom built character order, without
+	this checkbox checked the game will use whichever secondary character is selected at the start 
+	of the game. If 'Custom Primary Character' is selected without this setting then no secondary
+	characters will appear, if this is selected without 'Custom Primary Character' selected then 
+	you will keep whatever primary character you chose at the start of the game and have a random
+	or custom secondary character, which will overwrite in game options like '& Knuckles' and 'Sonic
+	& Tails'. 'No character' is also an option for secondary character, so in a random game with this 
+	option set it is still possible to roll a solo character.
+	
+Emeralds:
+Starting Emeralds - 
+Emerald Mode -
+	
 Random Game
 ========================================================================================================
 Click the Random Game button. The random game uses a random seed. If you don't supply a random seed, a 
@@ -52,97 +76,6 @@ number in an earlier level slot for shorter games, this is to ensure your game h
 having to forcibly terminate the game). I have provided the internal numbers the game uses for relevant
 scenes and characters below:
 
-Scene Numbers for Stages:<br>
-Vanilla<br>
-09 GHZ 1<br>
-10 GHZ 2<br>
-11 CPZ 1<br>
-12 CPZ 2<br>
-13 SPZ 1<br>
-14 SPZ 2<br>
-15 FBZ 1<br>
-16 FBZ 2<br>
-17 PGZ 1<br>
-18 PGZ 2<br>
-19 SSZ 1<br>
-20 SSZ 2<br>
-21 Metal Sonic<br>
-22 HCZ 1<br>
-23 HCZ 2<br>
-24 MSZ 1<br>
-25 MSZ 1 K<br>
-26 MSZ 2<br>
-27 OOZ 1<br>
-28 OOZ 2<br>
-29 LRZ 1<br>
-30 LRZ 2<br>
-31 LRZ Boss<br>
-32 MMZ 1<br>
-33 MMZ 2<br>
-34 TMZ 1<br>
-35 TMZ 2<br>
-36 TMZ Boss<br>
-37 ERZ<br>
-Encore Stages<br>
-38 GHZ 1<br>
-39 GHZ 2<br>
-40 CPZ 1<br>
-41 CPZ 2<br>
-42 SPZ 1<br>
-43 SPZ 2<br>
-44 FBZ 1<br>
-45 FBZ 2<br>
-46 PGZ 1<br>
-47 PGZ 2<br>
-48 SSZ 1<br>
-49 SSZ 2<br>
-50 Metal Sonic<br>
-51 HCZ 1<br>
-52 HCZ 2<br>
-53 MSZ 1<br>
-54 MSZ 2<br>
-55 OOZ 1<br>
-56 OOZ 2<br>
-57 LRZ 1<br>
-58 LRZ 2<br>
-59 LRZ Boss<br>
-60 MMZ 1<br>
-61 MMZ 2<br>
-62 TMZ 1<br>
-63 TMZ 2<br>
-64 TMZ Boss<br>
-vanilla<br>
-65 emerald stage 1<br>
-66 emerald stage 2<br>
-67 emerald stage 3<br>
-68 emerald stage 4<br>
-69 emerald stage 5<br>
-70 emerald stage 6<br>
-71 emerald stage 7<br>
-Encore<br>
-72 emerald stage 1<br>
-73 emerald stage 2<br>
-74 emerald stage 3<br>
-75 emerald stage 4<br>
-76 emerald stage 5<br>
-77 emerald stage 6<br>
-78 emerald stage 7<br>
-Ending Scenes<br>
-126 Sonic Ending<br>
-127 Encore Ending<br>
-128 Tails Ending<br>
-129 Knuckles Ending<br>
-130 Mighty Ending<br>
-131 Ray Ending<br>
-132 Super Sonic Ending<br>
-
-Character Values:<br>
-sonic    01<br>
-tails    02<br>
-knuckles 04<br>
-mighty   08<br>
-ray	 16<br>
-
 Known Issues
 =======================================================================================================
 -The issues mentioned above with save files. The game seems to have trouble understanding some things 
@@ -150,19 +83,10 @@ Known Issues
 	mentioning the way sequencing is done on this there could be other issues with trying to load 
 	existing files. This is why 'No Save' is recommended.
 	
--Coming from Mirage Saloon Act 1 Knuckles Mania Mode to Mirage Saloon Act 2 Encore or coming from 
-	Mirage Saloon Act 1 Knuckles Mania Mode as Tails to Mirage Saloon Act 2 Mania Mode or Encore 
-	is likely to have you stuck slightly in the ground at the start of Act 2. The collision here
-	is favorable, so you can just mash jump and you'll get out or just hit restart.
-	
 -Knuckles can make it into the Heavy Rider fight quite naturally in Encore Mode Lava Reef Act 2. When
 	the game tries to play his transition animation, after the act, Knuckles will just continually 
 	walk into the wall at the edge of the arena. Since cutscene skip exists in this version of the 
 	game, just hit start and you will head to the next zone.
-
--Going from Green Hill Act 1 Encore Mode to Green Hill Act 2 Mania Mode causes the color palettes to 
-	become blended for some reason, you should still be able to tell the background changed and 
-	that the level is the Encore or Mania Mode version as the level starts. 
 	
 -Cheat Engine uses lua for some strange reason as it's scripting language, so this is what the 
 	randomizer is written in. Lua has notoriously bad random functions. I have taken some steps
