@@ -19,7 +19,7 @@ Intructions
 	trainers require that the applications they are tied to is running before they are started to 
 	attach to the process.)
 
--Click on the check box marked 'Allow Custom Level/Character Order'. This option sets the necessary hooks
+-Click on the check box marked 'Attach New Code to Sonic Mania'. This option sets the necessary hooks
 	for the rest of the program to work. Unchecking the box reverts the game code to it's default
 	state. Checking or unchecking the checkbox will revert the application back to it's default 
 	settings as well.
@@ -28,53 +28,40 @@ Intructions
 
 Universal Settings
 ========================================================================================================
-Custom level order - This setting allows for a random or custom built level order, without this checkbox 
-	checked the game will use the default level order.
+Allow Custom level order - This setting allows for a random or custom built level order, without this checkbox checked the game will use the default level order.
 	
-Custom Primary Character - This setting allows for a random or custom built character order, without
-	this checkbox checked the game will use whichever character is selected at the start of the game.
-	This checkbox being checked without the secondary checkbox checked only allows for solo character
-	combos, so no Sonic and Tails or Knuckles and Knuckles without also checking the next box.
+Allow Custom Character Order - This setting allows for a random or custom built character order, without this checkbox checked the game will use whichever character is selected at the start of the game. This checkbox being checked without the secondary checkbox checked only allows for solo character combos, so no Sonic and Tails or Knuckles and Knuckles without also checking the next box.
 	
-Custom Secondary Character - This setting allows for a random or custom built character order, without
-	this checkbox checked the game will use whichever secondary character is selected at the start 
-	of the game. If 'Custom Primary Character' is selected without this setting then no secondary
-	characters will appear, if this is selected without 'Custom Primary Character' selected then 
-	you will keep whatever primary character you chose at the start of the game and have a random
-	or custom secondary character, which will overwrite in game options like '& Knuckles' and 'Sonic
-	& Tails'. 'No character' is also an option for secondary character, so in a random game with this 
-	option set it is still possible to roll a solo character.
+Allow Custom Secondary Character - This setting allows for a random or custom built character order, without this checkbox checked the game will use whichever secondary character is selected at the start of the game. If 'Custom Primary Character' is selected without this setting then no secondary characters will appear, if this is selected without 'Allow Custom Character Order' selected then you will keep whatever primary character you chose at the start of the game and have a random or custom secondary character, which will overwrite in game options like '& Knuckles' and 'Sonic & Tails'. 'No character' is also an option for secondary character, so in a random game with this option set it is still possible to roll a solo character.
 	
 Emeralds:
-Starting Emeralds - 
-Emerald Mode -
+Emerald Count - Sets the starting emerald count. Options are 0-7 and Random. 0-7 give the emeralds in order with 4 having emeralds 1, 2, 3, and 4 and 5 giving those plus emerald 5, leaving the last two emerald stage to complete. Random gives not just a random amount but random emeralds, so you could start with emeralds 1,4, and 5 leaving emerald stages 2, 3, 6, and 7 to complete. Further the stage order will be shuffled on random, so for the above example you won't necessarily have the stages appear in that sequential order (2, 3, 6, 7) it may be that you need to complete the stages in the order 3, 7, 2, and 6.
+
+Emerald Mode - Sets whether emerald stages are their encore or mania mode variants. Options are mania, encore, or random. Random will set whether a stage is mania or encore on a stage by stage basis, so one run can have both mania and encore variants appear.
 	
 Random Game
 ========================================================================================================
-Click the Random Game button. The random game uses a random seed. If you don't supply a random seed, a 
-number between 1 and 999999999, then the application will auto generate one and place it in the seed
-number box. The seed allows for games with the same number to have identical results, this lets games
-be shared for things like races. The random game shuffles the zone order, keeping acts from the same
-zones paired together, and changes on a level by level basis whether the act uses the Encore or Mania
-Mode layout. Then it shuffles characters on a zone by zone basis. The game uses the end coordinates 
-from the first act on many stages to set the starting coordinates of the second act, this is why certain
-things are randomized zone by zone instead of act by act, similarly characters could end up in some 
-weird states if you were, let's say, flying with Tails while act 1 was clearning then turned into Sonic.
-I would like to eventually have all of this randomized level by level but for now this is done to ensure
-stability. Furthermore, if the game rolls Mirage Saloon Act 1 Knuckles then it will ensure that your 
-character is either Tails or Knuckles for that zone, yes that level is completable with Tails. 
+Level Count - Sets how many levels will happen before the ending in a random game. Options are 1 to 49. The randomizer will attempt to make sure that levels do not repeat and if the level count is 24 or under it will not repeat the a variant on the same level. For instance if Encore Green Hill Act 1 comes up as a level then Mania Green Hill Act 1 will not appear in that seed. If the level is set to over 24 levels then you wont see the other variation of a certain stage until after the 24th level. So for the above example, if you get Encore Green Hill Act 1 in the first 24 levels then Mania Green Hill Act 1 can't appear until level 25 plus. Other consideration have been made for Mirage Saloon Zone Act 1, if level count is set to 49 then all three variations should appear in the run. If Mirage Saloon Act 1 Knuckles appears the game will give the player either Knuckles or Tails or Tails in the secondary slot if 'Allow Custom Secondary Character Order' is checked.
+
+Cap run with Egg Reverie - This should be pretty self explanitory. This will make the final level of the run into Egg Reverie, with a random super character. Egg Reverie is not used in the randomization otherwise, I figure it would be more fun as a unique "Endgame" level to celebrate the finishing a run.
+
+Randomize Starting Lives - This will make starting lives a random number between 0 and 4. I know both 0 and 1 are 'Game Overs' on death. So if you get zero that just means you basically start at a negative 1 deficit, don't die.
+
+Randomize Rings Required for Super Forms - Makes rings required for turning a character super a random number between 1 and 100.
+
+Shuffle Power Ups - This will change which monitors are which. For instance ring monitors could now be electric shields and electric shields could become speed shoes. This will be consistent throughout the seed, so if you identify what monitor types are shuffled with which then you can plan your routes on later levels around this knowledge. By default the monitor types in the shuffle include: 10 Rings, Blue Shield, Bubble Shield, Fire Shield, Electric Shield, Invincibility, Speed Shoes, Extra Life, Eggman Box, Blue Ring, and Character Switch. That's 11 monitor types that are shuffled, in mania mode only 10 different types appear, so that means one of the 11 won't appear in the seed. 
+
+Include Random and Super Boxes in Power Up Shuffle - 'Shuffle Power Ups' must be checked for this option to be available, only one of 'Include Random and Super Boxes in Power Up Shuffle', 'Make All Power Ups Random Boxes' or 'Get a Load of This!!!!' mayb be checked at a time. This adds two more monitor types to the shuffle, so they have the potential to appear in a run but again it's 10 monitor types with now 13 possible options. 
+
+Make All Power Ups Random Boxes - 'Shuffle Power Ups' must be checked for this option to be available, only one of 'Include Random and Super Boxes in Power Up Shuffle', 'Make All Power Ups Random Boxes' or 'Get a Load of This!!!!' mayb be checked at a time. For the truly zanny experience. This makes all monitors the '?' that you may have seen in multiplayer, it bestows a completely random power up when you break it open.
+
+Get A Load of This!!!!! - HaHaHa!!! Let's see if you can make it through this Sonic!
+
+Random Game - Once all settings are set click the Random Game button. If you change settings after clicking the button please do so again. The application doesn't write the necessary values to memory until this button is clicked. The random game uses a random seed. If you don't supply a random seed, a number between 1 and 999999999, then the application will auto generate one and place it in the seed number box. The seed allows for games with the same number and options to have identical results, this lets games be shared for things like races. 
 
 Custom Game
 =======================================================================================================
-For a custom game you will fill in the provided boxes with level 'scene' numbers (these are the 
-internal numbers the game uses to reference where in the game the player is) and character numbers.
-Feel free to use any combos you want but remember that some could create undesireable effects, I 
-referenced some of these effects in the Random Game section. It's not hard to end up stuck in the floor
-of Studiopolis Act 1 when coming from a different Act 1. Make sure to fill in an ending after your final
-level. I have provided an ending slot if you use all 24 level slots or you could put the ending 'scene'
-number in an earlier level slot for shorter games, this is to ensure your game has a natural ending (not
-having to forcibly terminate the game). I have provided the internal numbers the game uses for relevant
-scenes and characters below:
+For custome games you can use the arrows to add or remove values to the level order with the lef and right arrow icons. The custom games logic uses the level amount in the 'Custom Level Order' list box to determine the level count. The characters are assigned to the same level that they share an index number with from their list box. If no primary character is assigned to a level it defaults to Sonic, if no Secondary Character is assigned to a level it defaults to 'No Character'. You also have the option to pick an ending. Once all options are set to your liking click the 'Write Custom Game to Ram'. This option will set the necessary values to make the custom game playable in game. If you change any settings make sure to click 'Write Custom Game to Ram' again.
 
 Known Issues
 =======================================================================================================
