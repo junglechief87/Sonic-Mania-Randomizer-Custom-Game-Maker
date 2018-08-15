@@ -75,6 +75,8 @@ Known Issues
 	walk into the wall at the edge of the arena. Since cutscene skip exists in this version of the 
 	game, just hit start and you will head to the next zone.
 	
+-Only in Press Garden Act 2, the monitors will still show their default images when frozen in ice, if Power Up Shuffle is on. If you break the ice you will see the correct monitor image. This is obviously an issue with the game having specific assest for monitors frozen in ice.
+	
 -Cheat Engine uses lua for some strange reason as it's scripting language, so this is what the 
 	randomizer is written in. Lua has notoriously bad random functions. I have taken some steps
 	to mitigate this but if you find that you are getting similar seeds or seed numbers then I
