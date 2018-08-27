@@ -43,7 +43,7 @@ Random Game
 ========================================================================================================
 Level Count - Sets how many levels will happen before the ending in a random game. Options are 1 to 49. The randomizer will attempt to make sure that levels do not repeat and if the level count is 24 or under it will not repeat the a variant on the same level. For instance if Encore Green Hill Act 1 comes up as a level then Mania Green Hill Act 1 will not appear in that seed. If the level is set to over 24 levels then you wont see the other variation of a certain stage until after the 24th level. So for the above example, if you get Encore Green Hill Act 1 in the first 24 levels then Mania Green Hill Act 1 can't appear until level 25 plus. Other consideration have been made for Mirage Saloon Zone Act 1, if level count is set to 49 then all three variations should appear in the run. If Mirage Saloon Act 1 Knuckles appears the game will give the player either Knuckles or Tails or Tails in the secondary slot if 'Allow Custom Secondary Character Order' is checked.
 
-Cap run with Egg Reverie - This should be pretty self explanitory. This will make the final level of the run into Egg Reverie, with a random super character. Egg Reverie is not used in the randomization otherwise, I figure it would be more fun as a unique "Endgame" level to celebrate the finishing a run.
+Cap run with Egg Reverie - This should be pretty self explanitory. This will make the final level of the run into Egg Reverie, with a random super character. Egg Reverie is not used in the randomization otherwise, I figure it would be more fun as a unique "Endgame" level to celebrate the finishing of a run.
 
 Randomize Starting Lives - This will make starting lives a random number between 0 and 4. I know both 0 and 1 are 'Game Overs' on death. So if you get zero that just means you basically start at a negative 1 deficit, don't die.
 
@@ -57,7 +57,7 @@ Make All Power Ups Random Boxes - 'Shuffle Power Ups' must be checked for this o
 
 Get A Load of This!!!!! - HaHaHa!!! Let's see if you can make it through this Sonic!
 
-Random Game - Once all settings are set click the Random Game button. If you change settings after clicking the button please do so again. The application doesn't write the necessary values to memory until this button is clicked. The random game uses a random seed. If you don't supply a random seed, a number between 1 and 999999999, then the application will auto generate one and place it in the seed number box. The seed allows for games with the same number and options to have identical results, this lets games be shared for things like races. 
+Random Game - Once all settings are set click the Random Game button. If you change settings after clicking the button please do so again. The application doesn't write the necessary values to memory until this button is clicked. The random game uses a random seed. If you don't supply a random seed, a number between 1 and 999999999, then the application will auto generate one and place it in the seed number box. The seed allows for games with the same number and options to have identical results, this lets games be shared for things like races. If you would like a new seed then earse what is in the random game text box and a new one will genreate when random game is clicked again. *Note: This writes random game setting to RAM, you do not want to click the 'Write Custom Game to RAM' after this, that will overwrite your random game.
 
 Custom Game
 =======================================================================================================
@@ -77,8 +77,4 @@ Known Issues
 	
 -Only in Press Garden Act 2, the monitors will still show their default images when frozen in ice, if Power Up Shuffle is on. If you break the ice you will see the correct monitor image. This is obviously an issue with the game having specific assest for monitors frozen in ice.
 	
--Cheat Engine uses lua for some strange reason as it's scripting language, so this is what the 
-	randomizer is written in. Lua has notoriously bad random functions. I have taken some steps
-	to mitigate this but if you find that you are getting similar seeds or seed numbers then I
-	would recommend just going to random.org and grabbing a seed number from there and pasting
-	it into the randomizer gui.
+-It has been reported that the randomizer will not work if background pausing is disabled in Sonic Mania. Make sure background pausing is enabled.
