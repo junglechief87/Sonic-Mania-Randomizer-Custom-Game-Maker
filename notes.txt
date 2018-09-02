@@ -1,3 +1,7 @@
+to dos
+figure out how to make encore trigger game overs
+drown music doesn't play with super music disabled
+super music does play if player goes super while small on MMZ2 with super music disabled
 
 sonicmania.exe+6b370f3
 sonicmania.exe+DC0368 break
@@ -84,3 +88,26 @@ checks again for super to warp to egg reverie on escape scene finished
 
 
 SonicMania.exe+45EA70
+
+
+SonicMania.exe+2D6DE33 - EB 07                 - jne SonicMania.exe+2D6DE3C 
+change this to jmp SonicMania.exe+2D6DE3C to remove automatic emerald stage change for having the game in encore
+
+change je to jmp
+SonicMania.exe+374B972 - 74 13                 - je SonicMania.exe+374B987
+SonicMania.exe+AE0AD - 74 2C                 - je SonicMania.exe+AE0DB
+
+SonicMania.exe+A9C5D4 stores address of current game mode
+
+SonicMania.exe+55B27 - 7E 12                 - jle SonicMania.exe+55B3B
+nop for rings to restor every act
+
+SonicMania.exe+93B28 - 89 88 84174400        - mov [eax+SonicMania.exe+41784],ecx
+nop this line to prevent game from restoring previous level's reserve characters in encore
+
+SonicMania.exe+A6575 - 66 FF 40 18           - inc word ptr [eax+18]
+increment for LRZ2 to LRZ2 Boss, put check here for encore
+
+
+
+
