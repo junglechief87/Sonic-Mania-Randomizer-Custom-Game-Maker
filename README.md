@@ -10,6 +10,26 @@ level? This application will let you set that up. It also contains functionality
 using seeds, so the experience can be different each time you play. You can even share the seed number 
 with someone so they can have the same experience or start a race with the same level and character layout.
 
+New in this version
+=======================================================================================================
+-You can now select Encore mode when running the rando, to do this set the option for Game Mode to Encore, you will still start the game from a 'No Save' Mania Mode file. Encore mode may have a few minor bugs but I wanted to get this version out because it contained a few other bug fixes that I thought were important. In Encore mode, if the custom character primary or secondary slots are enabled, it resets the reserve character slots, 3-5, back to no character each act. This is to keep players from storing one character they want to use and not dealing with what random give them in slots 1 and 2. This is a design decisions, not a bug. Also Mirage Saloon Act 1 Mania and Egg Reverie both still work when Encore mode is set, it will however revert the game to Mania mode for just those levels and then revert back to Encore afterward.
+
+-There are now options to disable Super Music. There are a few minor audio bugs with this setting.
+
+-There is also an option for choosing Sonic's Ability, with one of the choices being random.
+
+-There is now an option to select which versions of levels you want in the pool for the random game. Choices are: Mania, Encore, and All.
+
+-I changed the random game option to 'Write Random Game to RAM', hopefully this makes it more clear that the custom game and random game options are exclusive to themselves.
+
+-The custom game interface has had some GUI upgrades. The boxes are now multiselect for the levels, enjoy being able to select multiple levels at once to add or remove. For characters an option to insert a number of times you would like to add the selected character has been added, so if you want a 24 level run with Sonic as the primary character the whole time you only need to type 24 in this box then select Sonic and add once. This box also works with the secondary character slot and an option for 'None' has been added to the secondary character slot. This should speed up custom game creation.
+
+Bug Fixes
+=======================================================================================================
+-Fixed bug where big ring flags were not being reset each act but only after an act 2 had been completed. This resulted in some bing rings being disabled without having gone into the special stage. This is now fixed.
+
+-Fixed bug where having an amount of rings to activate super above 50 could cause super transformations to not trigger in ERZ, resulting in deaths. When ERZ starts it now reverts the rings to activate super back to 50. 
+
 Intructions
 ========================================================================================================
 -Make sure Sonic Mania is running. (This is based off of Sonic Mania Plus and uses code from the Encore 
@@ -78,3 +98,11 @@ Known Issues
 -Only in Press Garden Act 2, the monitors will still show their default images when frozen in ice, if Power Up Shuffle is on. If you break the ice you will see the correct monitor image. This is obviously an issue with the game having specific assest for monitors frozen in ice.
 	
 -It has been reported that the randomizer will not work if background pausing is disabled in Sonic Mania. Make sure background pausing is enabled.
+
+-When activating super as a mini character in MMZ2, the super music will not be disabled. 
+
+-Deactivating super music appears to deactivate the drowning music too.
+
+-There was a bug where it would spawn the player inside the wall when going to the boss scene for LRZ2 Mania Mode as Knuckles while in Encore Mode. You will notice that the Boss fights for LRZ2 always takes place in the Encore version, which is just a palette swap, now. This prevents this bug.
+
+-There is some odd issue with how continues work with encore set. Often it will just spawn you back at the alst checkpoint when you die with the timer where it was at previously, not sure what causes this but it really doesn't hurt how Encore works, so for now consider it a nice help that you don't game over, you might have to watch for timer overs now though.
