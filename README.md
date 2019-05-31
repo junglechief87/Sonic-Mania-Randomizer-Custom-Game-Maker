@@ -93,7 +93,9 @@ Known Issues
 -Knuckles can make it into the Heavy Rider fight quite naturally in Encore Mode Lava Reef Act 2. When
 	the game tries to play his transition animation, after the act, Knuckles will just continually 
 	walk into the wall at the edge of the arena. Since cutscene skip exists in this version of the 
-	game, just hit start and you will head to the next zone.
+	game, just hit start and you will head to the next zone. (v1.0.3 only)
+
+-In 1.0.6 I use a different metod for level transitions, currently OOZ2 spawns you at the end of OOZ1. It doesn't affect anything, enjoy the free extra life. (1.0.6 only)
 	
 -Only in Press Garden Act 2, the monitors will still show their default images when frozen in ice, if Power Up Shuffle is on. If you break the ice you will see the correct monitor image. This is obviously an issue with the game having specific assest for monitors frozen in ice.
 	
@@ -105,4 +107,4 @@ Known Issues
 
 -There was a bug where it would spawn the player inside the wall when going to the boss scene for LRZ2 Mania Mode as Knuckles while in Encore Mode. You will notice that the Boss fights for LRZ2 always takes place in the Encore version, which is just a palette swap, now. This prevents this bug.
 
--There is some odd issue with how continues work with encore set. Often it will just spawn you back at the alst checkpoint when you die with the timer where it was at previously, not sure what causes this but it really doesn't hurt how Encore works, so for now consider it a nice help that you don't game over, you might have to watch for timer overs now though.
+-There is some odd issue with how continues work with encore set. Often it will just spawn you back at the last checkpoint when you die with the timer where it was at previously, not sure what causes this but it really doesn't hurt how Encore works, so for now consider it a nice help that you don't game over, you might have to watch for timer overs now though.
