@@ -1,3 +1,5 @@
+*Fixes for 1.6 are up, use the version with 1.0.6 in the title. The other version is if you are using Sonic Mania 1.3.
+
 This is the Sonic Mania Randomizer/Custom Game Maker made using Cheat Engine assembly and lua scripting.
 This requires Cheat Engine 6.7 or greater to run.
 
